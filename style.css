@@ -43,14 +43,14 @@ body {
 }
 
 .sidebar-img {
-  width: 50%;
+  width: 40%;
   cursor: pointer;
   margin-top: 15px;
 }
 
 .sidebar-list {
   list-style: none;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .sidebar-list-item {
@@ -91,7 +91,7 @@ body {
 }
 
 .sidebar-vert-break {
-  height: 25px;
+  height: 30px;
   width: 2px;
   background-color: #fff;
   margin: 0 auto;
@@ -160,16 +160,13 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
 }
-
-
-
 .navigation__link:active {
   color: #fff;
 }
-
 .navigation__link:active ~ .navigation__item::after {
   opacity: 1;
 }
+
 .title-hits {
   color: #fff;
   padding: 30px 0;
@@ -204,4 +201,110 @@ body {
   font-size: 15px;
   color: #fff;
   padding: 10px 0;
+}
+.player {
+  height: 100px;
+  background-color: rgb(40,40,40);
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.player--content {
+  flex: 0 0 90%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.player--list {
+  list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.player i {
+  color: inherit;
+  cursor: pointer;
+}
+
+.volum {
+  margin-left: auto;
+}
+
+.icon--mid {
+  font-size: 18px;
+}
+
+.icon--big {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .sidebar {
+    width: 70px;
+    padding: 5px;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+  }
+
+  .sidebar-image {
+    width: 100%;
+  }
+
+  .sidebar a,
+  .sidebar .button,
+  .sidebar .sidebar-vert-break {
+    display: none;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+}
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 15px;
+  }
+
+  .player {
+    height: 65px;
+    padding: 10px 0;
+  }
+
+  .player--list {
+    width: 200px;
+  }
+
+  .hits,
+  .charts {
+    justify-content: space-around;
+  }
+
+  .hits__item,
+  .charts__item {
+    margin: 0 10px 25px 0;
+  }
+
 }
